@@ -1,8 +1,8 @@
 // import all models
-const Post = require('./Post');
-const User = require('./User');
-const Vote = require('./Vote');
-const Comment = require('./Comment');
+const Post = require('./Post_model');
+const User = require('./user_model');
+const Vote = require('./Vote_model');
+const Comment = require('./Comment_model');
 
 // create associations
 User.hasMany(Post, {
