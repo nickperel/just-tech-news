@@ -9,9 +9,11 @@ test('format_date() returns a date string', () => {
 });
 
 test('format_plural() returns a pluralized word', () => {
+    const word1 = format_plural('tiger', 2);
+    const word2 = format_plural('lion', 1);
 
-    expect(format_plural("Tiger", 2)).toBe("Tigers");
-    expect(format_plural("Lion", 1)).toBe("Lion");
+    expect(word1).toBe("tigers");
+    expect(word2).toBe("lion");
 });
 
 test('format_url() returns a simplified url string', () => {
